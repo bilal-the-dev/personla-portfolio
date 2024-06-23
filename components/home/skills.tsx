@@ -111,16 +111,15 @@ const SkillsSection = () => {
         <div className="flex flex-col skills-wrapper">
           {renderSectionTitle()}
           <div className="mt-10">
-            {renderSkillColumn("FRONTEND DEVELOPMENT", SKILLS.frontend)}
+            {renderSkillColumn("Data Science", SKILLS.frontend)}
           </div>
           <div className="flex flex-wrap mt-10">
             <div className="mr-6 mb-6">
               {renderSkillColumn(
-                "User Interface, User Experience Design",
+                "Tools for Data Science, Machine Learning",
                 SKILLS.userInterface
               )}
             </div>
-            <div>{renderSkillColumn("Other Skills", SKILLS.other)}</div>
           </div>
         </div>
       </div>
