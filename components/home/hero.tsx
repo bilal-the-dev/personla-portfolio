@@ -14,7 +14,7 @@ const HERO_STYLES = {
   SOCIAL_LINK: "link hover:opacity-80 duration-300 md:mr-4 mr-2",
   BG_WRAPPER:
     "absolute hero-bg right-0 md:bottom-0 bottom-8 -z-1 md:w-3/4 w-full scale-125 sm:scale-100 flex items-end",
-  TYPED_SPAN: "text-lg sm:text-2xl md:text-4xl seq",
+  TYPED_SPAN: "text-lg sm:text-xl md:text-4xl seq",
 };
 
 const HeroSection = React.memo(() => {
@@ -80,7 +80,7 @@ const HeroSection = React.memo(() => {
         <h2 className="text-4xl seq">Hello 👋🏻</h2>
         <h1 className="text-3xl seq">I am Shahzeb Ali</h1>
       </div>
-      <p className="mb-4 w-[30rem]">
+      <p className="mb-4 md:w-[30rem]">
         <span className={HERO_STYLES.TYPED_SPAN} ref={typedSpanElement}></span>
       </p>
       <div className="flex seq mb-5">{renderSocialLinks()}</div>
