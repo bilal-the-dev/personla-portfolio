@@ -42,7 +42,7 @@ export const EMAIL = "abc@gmail.com";
 
 export const SOCIAL_LINKS = {
     linkedin: "https://www.linkedin.com/in/shahzeb-ali-34a1841a2/",
-    github: "https://github.com/Shahzeb-A?tab=repositories",
+    github: "https://github.com/Shahzeb-A?tab=repositories  ",
     instagram : "https://www.instagram.com/shaz_codes/",
     facebook : 'https://www.facebook.com/people/Shahzeb-Ali/100009494757377/',
 };

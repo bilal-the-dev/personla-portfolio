@@ -462,14 +462,14 @@ const TimelineSection = ({ isDesktop }: IDesktop) => {
         className="w-full h-8"
         src=""
         alt=""
-        width={644}
+        width={1000}
         height={34}
       />
       <div className="relative h-full w-full -mt-2">
         <div className="absolute top-0 left-0 h-full w-full">
           {svgCheckpointItems.map((item, index) => (
             <Image
-              className={`w-full absolute top-0 object-cover slide-${
+              className={` absolute top-0 object-contain slide-${
                 index + 1
               }`}
               src={(item as CheckpointNode).slideImage || ""}

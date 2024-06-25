@@ -9,12 +9,12 @@ import HeroImage from "./hero-image";
 
 const HERO_STYLES = {
   SECTION:
-    "w-full flex md:items-center py-8 section-container min-h-screen relative mb-24",
+    "w-full flex justify-space-between md:items-center py-8 section-container min-h-screen relative mb-24",
   CONTENT: "font-medium flex flex-col pt-32 md:pt-0 select-none",
   SOCIAL_LINK: "link hover:opacity-80 duration-300 md:mr-4 mr-2",
   BG_WRAPPER:
     "absolute hero-bg right-0 md:bottom-0 bottom-8 -z-1 md:w-3/4 w-full scale-125 sm:scale-100 flex items-end",
-  TYPED_SPAN: "text-xl sm:text-2xl md:text-4xl seq",
+  TYPED_SPAN: "text-lg sm:text-2xl md:text-4xl seq",
 };
 
 const HeroSection = React.memo(() => {
@@ -80,7 +80,7 @@ const HeroSection = React.memo(() => {
         <h2 className="text-4xl seq">Hello 👋🏻</h2>
         <h1 className="text-3xl seq">I am Shahzeb Ali</h1>
       </div>
-      <p className="mb-4">
+      <p className="mb-4 w-[30rem]">
         <span className={HERO_STYLES.TYPED_SPAN} ref={typedSpanElement}></span>
       </p>
       <div className="flex seq mb-5">{renderSocialLinks()}</div>
@@ -119,7 +119,7 @@ const HeroSection = React.memo(() => {
       style={{ opacity: 0 }}
     >
       {renderHeroContent()}
-      {/*{renderBackgroundImage()}*/}
+      {renderBackgroundImage()}
     </section>
   );
 });
